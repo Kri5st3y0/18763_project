@@ -26,3 +26,10 @@ PostgreSQL enforces a defined schema that enhances data integrity by specifying 
   
 **Complex SQL Queries**  
 Structured data enables the execution of complex `SQL` queries like `JOIN` facilitating sophisticated data analysis and retrieval. Such operations may be cumbersome or less efficient in NoSQL databases, which are typically optimized for simpler queries and less rigid data structures.
+
+
+## Task 3: Machine Learning Modeling
+### Choice of Classifiers/Regressors
+**Linear Regression**
+**Random Forest**
+**Multilayer Perceptron(MLP)**
