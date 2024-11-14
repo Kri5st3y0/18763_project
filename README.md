@@ -31,5 +31,10 @@ Structured data enables the execution of complex `SQL` queries like `JOIN` facil
 ## Task 3: Machine Learning Modeling
 ### Choice of Classifiers/Regressors
 **Linear Regression**
+
+FIFA players dataset is a comprehensive dataset that contains ratings and scores of different aspects of players' characteristics. We choose to use linear regression as a baseline model to capture the linear relationship between individual features and the overall score of each player. Due to the high dimensionality of the datasets, we use elastic net regularization that combines L1 and L2 penalty to prevent overfitting. 
+
+We choose to tune the following parameters in our Spark ML version: regularization parameter ([0.01, 0.1, 0.5, 1.0]), number of epochs ([5, 10, 15, 20, 25]), and elastic net parameter ([0, 0.2, 0.4, 0.6, 0.8, 1]). By tuning the elastic net parameter, we found the best value is 0, meaning that simply applying L2 penalty to the loss function leads to lowest validation RMSE loss. By tuning the number of epochs, we found the best value is 5. By tuning the regularization parameter, we found the best value is 0.01.
+
 **Random Forest**
 **Multilayer Perceptron(MLP)**
